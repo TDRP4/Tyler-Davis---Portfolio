@@ -1,0 +1,225 @@
+* {
+    scroll-behavior: smooth;
+    
+}
+
+*::selection {
+    background-color: red;
+    color: purple;
+}
+
+@import url('https://fonts.cdnfonts.com/css/lemonmilk');
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    padding: 0 5vh 0 5vh;
+    box-sizing: border-box;
+    background-color: #e6e6e6;
+    border-bottom: 0.45vh solid grey;
+    z-index: 1000;
+}
+
+#headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 0.75vh;
+}
+
+#contactBtn {
+    padding: 0.2vh 0.6vh 0.2vh 0.6vh;
+    border: 0.25vh solid black;
+    border-radius: 8vh;
+}
+
+#contactBtn a {
+    color: black;
+    text-decoration: none;
+}
+
+#contactBtn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+#contactBtn:hover a {
+    color: white;
+    text-decoration: underline;
+}
+
+header p {
+    font-family: 'Lemon/Milk', sans-serif;
+    font-size: 2.6vh;
+    color: black;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+
+main {
+    margin-top: 20vh;
+}
+
+#desc {
+    display: flex;
+    position: sticky;
+    top: 9vh;
+    justify-content: center;
+    padding-bottom: 5vh;
+    text-align: center;
+    z-index: -1;
+}
+
+.conHead {
+    position: sticky;
+    top: 9.3vh;
+    z-index: 1;
+    margin-top: 1vh;
+    background-color: black;
+    border-bottom: 0.5vh solid #171717;
+}
+
+.conHead p {
+    font-size: 2.75vh;
+    margin: 0;
+    padding: 0.75vh 0 0.75vh 1.25vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5vh;
+    row-gap: 1vh;
+    background-color: #2b2b2b;
+}
+
+.conRow {
+    display: flex;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.conRow img {
+    height: 49vh;
+    width: auto;
+    padding: 1vh;
+    border: 0.4vh solid #404040;
+    background-color: #242424;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sliderElem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+.sliderElem p {
+    margin: 0;
+}
+
+.imgSlider {
+    display: flex;
+    overflow-x: hidden;
+    width: 115vh;
+    height: 35vh;
+    border: 0.4vh solid #404040;
+}
+
+.slideCon {
+    display: flex;
+    flex: 0 0 100%;
+    position: relative;
+    justify-content: center;
+    width: max-content;
+    height: auto;
+}
+
+.slideCon img {
+    max-width: 95%;
+    max-height: 100%;
+    align-self: center;
+    scroll-snap-align: start;
+}
+
+.sliderNav {
+    display: flex;
+    justify-content: center;
+    column-gap: 1vh;
+}
+
+.sliderNav a {
+    width: 0.5vh;
+    height: 0.5vh;
+    border-radius: 5vh;
+    border: 0.2vh solid white;
+    background-color: white;
+}
+
+.sliderNav a:hover {
+    background-color: #2b2b2b;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0 10vh 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+#footerCon {
+    display: flex;
+    position: fixed;
+    bottom: 7vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5vh;
+    z-index: -1000;
+    transition: bottom 0.1s ease;
+}
+
+#footerCon.active {
+    bottom: 0;
+}
+
+#socials {
+    display: flex;
+    gap: 0.85vh;
+}
+
+#socials img {
+    height: 3vh;
+}
+
+.hovElem {
+    position: absolute;
+    background-color: black;
+    outline: 0.2vh solid white;
+    padding: 0.2vh 0.4vh 0.2vh 0.4vh;
+}
+
+.hovElem p {
+    margin: 0;
+    font-weight: 200;
+}
