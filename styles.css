@@ -86,10 +86,6 @@ main {
     z-index: -1;
 }
 
-.page {
-    width: 100%;
-}
-
 .conHead {
     position: sticky;
     top: 9.25vh;
