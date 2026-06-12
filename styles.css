@@ -127,12 +127,13 @@ main {
 .conRow {
     display: flex;
     justify-content: center;
+    width: 100%;
     gap: 1vh;
 }
 
 .conRow img {
     height: 49vh;
-    width: 100%;
+    width: auto;
     padding: 1vh;
     border: 0.4vh solid #404040;
     background-color: #242424;
