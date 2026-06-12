@@ -11,10 +11,7 @@
 @import url('https://fonts.cdnfonts.com/css/lemonmilk');
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 200vh;
+    width: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
@@ -76,11 +73,6 @@ p {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     margin-top: 20vh;
 }
 
@@ -118,7 +110,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
     padding: 2.5vh;
     row-gap: 1vh;
     background-color: #2b2b2b;
@@ -127,7 +118,6 @@ main {
 .conRow {
     display: flex;
     justify-content: center;
-    width: 100%;
     gap: 1vh;
 }
 
